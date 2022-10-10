@@ -1,4 +1,6 @@
 // const header = <h1>Andrew McCall</h1>
+import React from "react";
+import {Fragment} from 'react';
 
 const details = {firstName: "Andrew", surname: "McCall"}
 const boolean = true;
@@ -11,10 +13,14 @@ const Element = () => {
 
     if (boolean){
         return(
-            <div className={details.firstName} surname={details.surname} test="test">
-                <h1>My name is: {formatName()} </h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod mollitia reiciendis nesciunt aliquid consectetur cumque laudantium obcaecati rem nam quisquam quis similique quam enim, laborum amet cum tempora a omnis!</p>
-            </div>
+            <React.Fragment> 
+                <Fragment> 
+                    <>
+                        <h1>My name is: {formatName()} </h1>
+                        <p>elemnt</p>
+                    </>
+                </Fragment>
+            </React.Fragment>
         )
     }else{
         return(<h2>{formatName()}</h2>)
