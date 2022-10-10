@@ -3,18 +3,16 @@ import logo from './logo.svg';
 import './App.css';
 import ElementClass from './components/elementClass';
 import Element from './components/element';
+import Proper from './components/Proper';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <meta> stylsheetbootstrap .css.min</meta>
         <img src={logo} className="App-logo" alt="logo" />
       </header>
-      {/* <Component></Component> */}
-      <Element></Element>
-      <ElementClass></ElementClass>
-      {React.createElement("div", {className: "createElementFunc"}, React.createElement("h1", null, "My React App"))}
-      {/* <div> <h1> My React App </h1> </div> */}
+      <Proper number={2} boolean={true} />
     </div>
   );
 }
