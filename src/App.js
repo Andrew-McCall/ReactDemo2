@@ -6,6 +6,7 @@ import Element from './components/element';
 import Proper from './components/Proper';
 import PropsExercise from './components/ProperExercise';
 import Clicker from './components/stateExample';
+import Search from './components/Search';
 
 function App() {
   return (
@@ -14,8 +15,9 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
       </header>
      
-      <Clicker/>
-
+      {/* <Clicker/> */}
+      <Search/>
+      
     </div>
   );
 }
