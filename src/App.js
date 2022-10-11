@@ -5,6 +5,7 @@ import ElementClass from './components/elementClass';
 import Element from './components/element';
 import Proper from './components/Proper';
 import PropsExercise from './components/ProperExercise';
+import Clicker from './components/stateExample';
 
 function App() {
   return (
@@ -12,8 +13,9 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
       </header>
-      {/* <Proper number={2} boolean={true} /> */}
-      <PropsExercise Header={"Andrew McCall"} p1="Paragraph One" p2="Paragraph Two"/>
+     
+      <Clicker/>
+
     </div>
   );
 }
