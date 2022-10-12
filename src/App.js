@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from './pug.png';
 import './App.css';
 import ElementClass from './components/elementClass';
 import Element from './components/element';
@@ -15,9 +15,6 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
       </header>
-     
-      {/* <Clicker/> */}
-      <Basket/>
       
     </div>
   );
