@@ -12,10 +12,10 @@ class Lifecycle extends Component {
 
     render(){
         console.log("Render")
-        return(<>
+        return(<div>
             <p>Lifecycle</p>
             <button onClick={() => this.setState({x:this.state.x + 1})}> {this.state.x}</button>
-        </>)
+        </div>)
     }
 
     componentWillUnmount(){

@@ -1,6 +1,9 @@
-import { useReducer } from "react";
+import { useReducer, useContext } from "react";
+import theme from "./Contexts/context";
 
 const Reducer = ()=> {
+
+    const {themeState} = useContext(theme);
 
     const reducer = (state, action) => {
         if (action){
@@ -24,6 +27,7 @@ const Reducer = ()=> {
 
     return(<div>
 
+        <p>{themeState}</p>
         <button onClick={click}> Add 1 </button>
         <p>{count}</p>
 
