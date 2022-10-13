@@ -3,16 +3,17 @@ import logo from './pug.png';
 import './App.css';
 
 import {
+
   BrowserRouter as Router,
   Routes as Switch,
   Route,
-
   Link
+
 } from "react-router-dom";
 
-import Request from './components/resquest';
 import Params from './components/Parmas';
 import History from './components/istory';
+import Reducer from './components/reducer';
 
 function App() {
   return (
@@ -27,10 +28,13 @@ function App() {
         </header>
 
         <Switch>  {/* Many Route */}
-          <Route path="/home" element={<h1>Home</h1>}/>
+          <Route path="/home" element={<Reducer/>}/>
           <Route path="/help" element={<History/>}/>
           <Route path="/test/:id" element={<Params/>}/>
-          <Route path="*" element={<h1>235Wild663</h1>}/>
+          <Route path="*" element={<div>
+            <h1>404 Page Not Found</h1>
+            <p>Gerrra off!</p>
+          </div>}/>
         </Switch>
 
       </Router>
